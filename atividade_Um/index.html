@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Atividade Um</title>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script>
+        // Espera a página carregar
+        $(function(){
+          $('#OK').on('click', function() {
+            let nome=$('#campo').val();
+            alert(' Olá ' + nome ); 
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <input id="campo" type="text">
+    <button id="OK">OK</button>
+  </body>
+</html>

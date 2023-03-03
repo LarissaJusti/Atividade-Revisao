@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Atividade Um</title>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+      <script>
+        $(function(){
+            var senha = 'lrss';
+
+            $('#Enviar').on('click', function (){
+                
+                let campo=$('#campo').val();
+
+                if(campo == senha){
+                    $(window.location.href="./acesso.html")
+               
+                } else {
+                    alert('Senha Incorreta, Tente Novamente!')
+                }
+            });
+
+        });
+      </script>
+  </head>
+  <body>
+    <h1>Digite a Senha Correta:</h1>
+    <input id="campo" type="password" name="senha">
+    <button id="Enviar">Enviar</button>
+  </body>
+</html>
